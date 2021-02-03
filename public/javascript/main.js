@@ -1,4 +1,5 @@
 // Les Objets
+//-----------------------
 //Présentation
 /* 
 let string = "Hello"
@@ -78,7 +79,7 @@ let a = {
     nom: "Skywalker",
     prenom: "Luke",
     sePresenter (){
-        console.log (`Bonjour je m'appelle ${a.nom} \n ${a.prenom}`)
+        console.log (`Bonjour je m'appelle ${this.nom} \n ${this.prenom}`)
     }
 }
 a.sePresenter()
@@ -88,13 +89,14 @@ a.sePresenter()
 /* let objet = {
     nom: "Onizuka",
     b(){
-        let reponse = prompt("introduire un age")
-        alert (`${objet.b} à ${reponse} ans`)
+        this.age = parseInt (prompt("introduire un age"))
+        alert (`${this.nom} à ${this.age} ans`)
     }
 }
 Object.b() */
 //------------------------------
 //2.3
+/* 
 let François = {
     derober (personne){
         this.panier.push (personne.panier.shift())
@@ -122,3 +124,5 @@ François.derober(Sergio.panier)
 
 console.log (François.panier)
 console.log (Sergio.panier)
+ */
+//----------------------------------
