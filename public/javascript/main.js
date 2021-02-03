@@ -95,7 +95,7 @@ a.sePresenter()
 }
 Object.b() */
 //------------------------------
-//2.3
+//3.1
 /* 
 let François = {
     derober (personne){
@@ -125,4 +125,40 @@ François.derober(Sergio.panier)
 console.log (François.panier)
 console.log (Sergio.panier)
  */
+//----------------------------------
+//4.1
+/* let vieille_dame = {
+    age: 67,
+    nom:{
+        prenom: "Germaine",
+        nomDeFamille: "Elmemere",
+    },
+    moral: "mal",
+    objet: "Vibromasseur",
+    action: "frappe",
+    parler (vieille_homme){
+        if (this.moral == "mal") {
+            alert (`${this.nom.prenom} ${this.nom.nomDeFamille} dit : Vous me dérangez!!! ${this.action} avec ${this.objet} dans la bouche`)
+        }
+        else if (this.moral == "bien"){
+            alert (`Bonjour ${vieille_homme.nom.prenom} ${vieille_homme.nom.nomDeFamille}`)
+        }
+    }
+}
+
+
+let vieille_homme = {
+    nom:{
+        prenom: "Jean",
+        nomDeFamille: "laSaucisse",
+    },
+    adoucir () {
+        vieille_dame.moral = "bien"
+    }
+}
+
+vieille_dame.parler(vieille_homme)
+vieille_homme.adoucir(vieille_dame)
+vieille_dame.parler(vieille_homme) 
+*/
 //----------------------------------
