@@ -73,9 +73,52 @@ console.log (voleur)
 //------------------------
 //EXO_02
 //2.1
+/* 
 let a = {
     nom: "Skywalker",
     prenom: "Luke",
-    age: 20,
-    taille: 170,
+    sePresenter (){
+        console.log (`Bonjour je m'appelle ${a.nom} \n ${a.prenom}`)
+    }
 }
+a.sePresenter()
+ */
+//----------------------------
+//2.2
+/* let objet = {
+    nom: "Onizuka",
+    b(){
+        let reponse = prompt("introduire un age")
+        alert (`${objet.b} à ${reponse} ans`)
+    }
+}
+Object.b() */
+//------------------------------
+//2.3
+let François = {
+    derober (personne){
+        this.panier.push (personne.panier.shift())
+        this.panier.push (personne.panier.shift())
+    },
+    panier : [
+        "sel",
+        "poivre",
+        "curcuma",
+    ]
+    
+}
+
+let Sergio = {
+    panier : [
+        "tomate",
+        "poulet",
+        "pain",
+    ]
+}
+console.log (François.panier)
+console.log (Sergio.panier)
+
+François.derober(Sergio.panier)
+
+console.log (François.panier)
+console.log (Sergio.panier)
